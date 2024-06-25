@@ -1,0 +1,28 @@
+.visible {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+
+.invisible {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 0.5s, opacity 0.5s;
+}
+
+.btn {
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    transition: filter 1s ease-in-out;
+}
+
+.btn:hover {
+    filter: drop-shadow(0 0 0.75rem #FF9800);
+
+}

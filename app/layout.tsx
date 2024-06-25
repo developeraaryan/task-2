@@ -8,6 +8,7 @@ const inter = Roboto_Mono({
   display: "swap",
 });
 import ProgressBarProvider from "@/Components/ProgressBarProvider/page";
+import ScrollToTop from "@/Components/ScrollToTop/page";
 
 export const metadata: Metadata = {
   title: "Shortlisted Users",
@@ -27,6 +28,7 @@ export default function RootLayout({
         <ProgressBarProvider>
           <Navbar />
           {children}
+          <ScrollToTop />
         </ProgressBarProvider>
       </body>
     </html>
