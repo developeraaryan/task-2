@@ -3,6 +3,8 @@
     color: white;
     padding: 10px;
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     width: 100%;
@@ -79,4 +81,30 @@
         background-position: 0% 50%;
     }
 
+}
+
+@media only screen and (max-width: 768px) {
+
+    .navbar {
+        padding: 10px 20px;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .navbar ul {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .navbar h1 {
+        font-size: 1.5rem;
+    }
+
+    .navbar ul li {
+        margin: 0;
+    }
+
+    .navbar ul li a {
+        font-size: 1.5rem;
+    }
 }
