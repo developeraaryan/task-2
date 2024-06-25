@@ -20,6 +20,7 @@ interface UsersProps {
 }
 
 const User: React.FC<UsersProps> = ({ user }) => {
+  const [src, setSrc] = React.useState<string>(user?.avatar);
   return (
     <section
       key={user?.id}
@@ -27,32 +28,33 @@ const User: React.FC<UsersProps> = ({ user }) => {
     >
       <div className=" flex justify-center items-center">
         <Image
-          src={`https://robohash.org/people`}
+          src={`${src}`}
           alt="User"
-          width={100}
-          height={100}
-          className="rounded-full grid  place-items-center bg-gray-300"
+          width={200}
+          height={200}
+          className="rounded-full grid  place-items-center bg-gray-300 shadow-inner shadow-gray-900 p-1"
+          onError={() => setSrc("/avatar.svg")}
         />
       </div>
       <div className="details col-span-3 grid">
-        <div className="name">
+        <div className="name font-black text-lg">
           {(user?.profile?.firstName).concat(" ", user?.profile?.lastName)}
         </div>
-        <div className="username font-semibold">
+        <div className="username text-gray-500 text-[0.75rem] md:text-base font-semibold">
           <strong>@{user?.profile?.username}</strong>
         </div>
-        <div className="title font-normal">
+        <div className="title text-sm md:text-base font-normal">
           <strong>{user?.jobTitle ? user?.jobTitle : "Anonymous User"}</strong>
         </div>
-        <div className="bio font-thin text-sm md:text-base text-justify">
+        <div className="bio font-thin text-xs md:text-base text-justify">
           {user?.Bio}
         </div>
         <div className="email">
           <a href={`mailto:${user?.profile?.email}`}>
             <strong>
-              <u>
-                <span className="text-blue-700">{user?.profile?.email}</span>
-              </u>
+              <span className="text-blue-400 text-xs md:text-base hover:text-blue-700 transition-colors duration-1000">
+                {user?.profile?.email}
+              </span>
             </strong>
           </a>
         </div>

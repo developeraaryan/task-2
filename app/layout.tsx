@@ -21,7 +21,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-gray-100 dark:bg-gray-400 text-gray-950 dark:text-gray-50`}>
+      <body
+        className={`${inter.className} bg-gray-100 dark:bg-gray-400 text-gray-950 dark:text-gray-50`}
+      >
         <ProgressBarProvider>
           <Navbar />
           {children}

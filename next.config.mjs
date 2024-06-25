@@ -6,6 +6,16 @@ const nextConfig = {
                 protocol: 'https',
                 hostname: 'robohash.org',
                 port: "",
+            },
+            {
+                protocol: 'https',
+                hostname: 'cdn.fakercloud.com',
+                port: "",
+            },
+            {
+                protocol: 'https',
+                hostname: 'cloudflare-ipfs.com',
+                port: "",
             }
         ]
     }
