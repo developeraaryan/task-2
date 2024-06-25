@@ -8,6 +8,7 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    @apply shadow-lg shadow-gray-500;
 }
 
 .navbar h1 {
