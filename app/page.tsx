@@ -1,7 +1,7 @@
 "use client";
-import React, { useEffect, useState } from "react";
-import Users from "@/components/Users/page"; // Ensure the path is correct based on your project structure
 import Loader from "@/components/Loader/page";
+import Users from "@/components/Users/page";
+import React, { useEffect, useState } from "react";
 
 interface UserType {
   createdAt: string;

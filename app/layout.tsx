@@ -2,13 +2,13 @@ import type { Metadata } from "next";
 import { Roboto_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar/page";
+import ScrollToTop from "@/components/ScrollToTop/page";
+import ProgressBarProvider from "@/components/ProgressBarProvider/page";
 const inter = Roboto_Mono({
   weight: ["400", "500", "600", "700"],
   subsets: ["latin"],
   display: "swap",
 });
-import ProgressBarProvider from "@/components/ProgressBarProvider/page";
-import ScrollToTop from "@/components/ScrollToTop/page";
 
 export const metadata: Metadata = {
   title: "Shortlisted Users",
