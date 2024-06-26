@@ -32,7 +32,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "Components/Loader",
+    "components/Loader",
     "out/types/**/*.ts"
   ],
   "exclude": [
