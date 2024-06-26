@@ -12,8 +12,9 @@ const inter = Roboto_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Shortlisted Users",
+  title: "Shortlisted Users - Banao Technologies",
   description: "Shortlisted Users",
+  keywords: "Shortlisted Users",
 };
 
 export default function RootLayout({

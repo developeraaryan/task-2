@@ -1,13 +1,16 @@
+import { Metadata } from "next";
 import Link from "next/link";
 import React from "react";
 
+export const metadata: Metadata = {
+  title: "About Us - Banao Technologies",
+  description: "About Us",
+  keywords: "About Us",
+};
+
 const About: React.FC = () => {
   return (
-    <main
-      className="container px-6 about-page 
-    flex flex-col justify-center items-center gap-4
-    min-w-full h-full bg-gradient-to-r from-[#FFC107] via-[#FF9800]  to-[#FF5722] text-white text-center py-10 bottom-0 min-h-screen md:px-10"
-    >
+    <main className="container px-6 about-page flex flex-col justify-center items-center gap-4 min-w-full h-full bg-gradient-to-r from-[#FFC107] via-[#FF9800] to-[#FF5722] text-white text-center py-10 bottom-0 min-h-screen md:px-10">
       <div className="about-content flex flex-col justify-center items-center gap-10">
         <p className="about-title text-3xl font-bold">About Us</p>
         <p className="about-text text-lg text-justify">

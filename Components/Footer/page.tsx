@@ -5,15 +5,10 @@ import { FaFacebookF, FaXTwitter } from "react-icons/fa6";
 
 const Footer: React.FC = () => {
   return (
-    <footer
-      className="
-    bg-gray-800 text-white text-center py-10 bottom-0 w-full
-    flex flex-col justify-center items-center gap-4
-    "
-    >
-      <div className=" self-stretch flex justify-center items-center flex-col gap-10 md:flex-row">
+    <footer className="bg-gray-800 text-white text-center py-10 bottom-0 w-full flex flex-col justify-center tems-center gap-4">
+      <div className="self-stretch flex justify-center items-center flex-col gap-10 md:flex-row">
         <div className="flex flex-col justify-center items-center w-full md:w-1/3">
-          <p className="logo capitalize text-xl bg-clip-text text-transparent bg-gradient-to-r from-[#FFC107] via-[#FF9800]  to-[#FF5722] w-full">
+          <p className="logo capitalize text-xl bg-clip-text text-transparent bg-gradient-to-r from-[#FFC107] via-[#FF9800] to-[#FF5722] w-full">
             <Link href="/">banao technologies</Link>
           </p>
         </div>
@@ -63,9 +58,9 @@ const Footer: React.FC = () => {
         <p>
           Created with ❤️ by{" "}
           <a
-           href="https://www.linkedin.com/in/aryanji/" 
-          target="_blank"
-          className="text-[#FF9800] hover:text-[#FF5722] transition-colors duration-700"
+            href="https://www.linkedin.com/in/aryanji/"
+            target="_blank"
+            className="text-[#FF9800] hover:text-[#FF5722] transition-colors duration-700"
           >
             Aryan Kumar
           </a>
