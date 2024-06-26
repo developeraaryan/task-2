@@ -42,8 +42,24 @@ const About: React.FC = () => {
         </li>
         <li className="text-lg text-justify w-full">
           The goal of this project was to build a simple website using{" "}
-          <span className="font-bold text-black">Next.js</span> and{" "}
-          <span className="font-bold text-[#38bdf8]">Tailwind CSS</span>.
+          <Link
+            href={`https://nextjs.org`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-bold text-black"
+          >
+            Next.js
+          </Link>{" "}
+          and{" "}
+          <Link
+            href={`https://tailwindcss.com`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-bold text-[#38bdf8]"
+          >
+            Tailwind CSS
+          </Link>
+          .
         </li>
         <li className="text-lg text-justify w-full">
           The website includes a home page and an about page, as well as a
