@@ -18,7 +18,8 @@ const nextConfig = {
                 port: "",
             }
         ]
-    }
+    },
+    distDir: 'out',
 };
 
 export default nextConfig;
