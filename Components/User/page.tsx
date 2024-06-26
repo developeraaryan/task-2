@@ -28,7 +28,7 @@ const User: React.FC<UsersProps> = ({ user }) => {
     >
       <div className=" flex justify-center items-center">
         <Image
-          src={`${src}`}
+          src={`https://robohash.org/person`}
           alt="User"
           width={200}
           height={200}
