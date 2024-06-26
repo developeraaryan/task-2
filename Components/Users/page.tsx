@@ -22,7 +22,7 @@ interface UserProps {
 
 const Users: React.FC<UserProps> = ({ users }) => {
   return (
-    <div className="grid grid-rows-1 md:grid-cols-2 gap-4 w-full">
+    <div className="grid grid-rows-1 md:grid-cols-2 gap-4 w-full ">
       {users.map((user, index) => (
         <User key={user.id} user={user} />
       ))}

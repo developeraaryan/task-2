@@ -43,10 +43,16 @@ const HomePage: React.FC = () => {
   }, []);
 
   return (
-    <main className="container mx-auto px-4 md:px-10 min-h-screen py-8 flex flex-col justify-center items-center gap-10 md:mx-auto">
+    <main className="container mx-auto px-4 md:px-10 min-h-screen py-8 flex flex-col justify-center items-center gap-10">
       {users?.length > 0 ? (
         <>
-          <h1 className="text-5xl md:text-9xl font-extrabold bg-gradient-to-r from-[#FF9800] via-[#FF5722] to-[#FFC107] bg-clip-text  text-transparent">
+          <h1
+            className="text-5xl md:text-9xl font-extrabold bg-gradient-to-r from-[#FF9800] via-[#FF5722] to-[#FFC107] bg-clip-text  text-transparent"
+            style={{
+              WebkitTextFillColor: "transparent",
+              filter: " drop-shadow(0 0 0.75rem #0d3a58)",
+            }}
+          >
             Users
             <div className="bg-gradient-to-r from-[#FF9800] via-[#FF5722] to-[#FFC107] h-1 md:h-2 rounded-full" />
           </h1>

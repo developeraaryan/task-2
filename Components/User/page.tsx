@@ -24,7 +24,7 @@ const User: React.FC<UsersProps> = ({ user }) => {
   return (
     <section
       key={user?.id}
-      className="bg-gray-100 text-black p-4 rounded-lg shadow-lg grid grid-cols-4 gap-8"
+      className="bg-gray-100  p-4 rounded-lg shadow-lg grid grid-cols-4 gap-8 bg-gradient-to-r from-[#FFC107] via-[#FF9800]  to-[#FF5722] text-white"
     >
       <div className=" flex justify-center items-center">
         <Image
@@ -40,7 +40,7 @@ const User: React.FC<UsersProps> = ({ user }) => {
         <div className="name font-black text-lg">
           {(user?.profile?.firstName).concat(" ", user?.profile?.lastName)}
         </div>
-        <div className="username text-gray-500 text-[0.75rem] md:text-base font-semibold">
+        <div className="username text-zinc-200 text-[0.75rem] md:text-base font-thin">
           <strong>@{user?.profile?.username}</strong>
         </div>
         <div className="title text-sm md:text-base font-normal">
