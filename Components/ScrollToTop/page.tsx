@@ -29,7 +29,7 @@ export default function ScrollToTop() {
         window.scrollTo({ top: 0, behavior: "smooth" });
       }}
       id="scrollToTop"
-      className={`fixed bottom-4 right-4 p-2 bg-transparent text-gray-50 rounded-lg group ${styles.invisible}`}
+      className={`fixed bottom-4 z-50 right-4 p-2 bg-transparent text-gray-50 rounded-lg group ${styles.invisible}`}
     >
       <Image
         src="/top.svg"

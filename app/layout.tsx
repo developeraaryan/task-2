@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "../components/Navbar/page";
 import ScrollToTop from "../components/ScrollToTop/page";
 import ProgressBarProvider from "../components/ProgressBarProvider/page";
+import Footer from "@/components/Footer/page";
 const inter = Roboto_Mono({
   weight: ["400", "500", "600", "700"],
   subsets: ["latin"],
@@ -29,6 +30,7 @@ export default function RootLayout({
           <Navbar />
           {children}
           <ScrollToTop />
+          <Footer />
         </ProgressBarProvider>
       </body>
     </html>
